@@ -1,0 +1,31 @@
+# Python
+.venv/
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+# Datos procesados (solo vive el código + raw documentado + provenance)
+data/raw/*
+data/bronze/*
+data/silver/*
+data/gold/*
+data/synthetic/*
+!data/raw/.gitkeep
+!data/raw/bcrp_*.csv
+!data/bronze/.gitkeep
+!data/silver/.gitkeep
+!data/gold/.gitkeep
+!data/synthetic/.gitkeep
+!data/synthetic/README.md
+*.duckdb
+*.duckdb.wal
+NO_SUBIR/
+informe/*.xlsx
+PASO_FALTANTES.md
+# Secretos
+.streamlit/secrets.toml
+.env
+# OS / editores
+.DS_Store
+Thumbs.db
+.vscode/
